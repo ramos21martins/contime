@@ -1,42 +1,24 @@
-.sidebar {
-  width: 250px;
+.sidebar{
+  background-color:#6a6ad6;
   height: 100vh;
-  background-color: #c7c6c5f9;
-  padding: 20px;
+  position: fixed;
+  width:15%;
+
+}
+.logo{
+  margin-top: 2rem;
+  margin-left: 1.3rem;
+}
+.menu-options{
+    list-style: none;
+    text-align:center;
+    margin-top:50%;
 }
 
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar li {
-  margin-bottom: 15px;
-}
-
-.sidebar a {
-  display: block;
-  padding: 10px;
-  color: #fff;
+.option{
   text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
 }
 
-.sidebar a:hover {
-  background-color: #555;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-
-
-.logo span {
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
+.logout{
+  margin-bottom: 0%;
 }

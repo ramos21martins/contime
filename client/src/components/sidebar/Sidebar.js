@@ -8,14 +8,20 @@ const Sidebar = () => {
       <div className="logo">
         <span>Contime</span>
       </div>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/add">Add Employee</Link>
-        </li>
-      </ul>
+      <div className='menu-options'>
+        <div className='option'>
+           <Link to="/">Home</Link>
+        </div>
+        <div className='option'>
+           <Link to="/">Home</Link>
+        </div>
+        <div className='option'>
+           <Link to="/">Home</Link>
+        </div>
+      </div>
+      <div className='logout'>
+        logout
+      </div>
     </div>
   );
 };
