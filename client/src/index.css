@@ -3,5 +3,10 @@
 *{
 margin: 0;
 font-family: 'Poppins', sans-serif;
+
+}
+
+div{
+    overflow-x: hidden
 }
 

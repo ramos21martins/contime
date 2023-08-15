@@ -54,7 +54,8 @@ const App = () => {
         <Sidebar />
         <Navbar/>
         <Routes>
-       
+          <Route path="/" element={<EmployeeTable employees={employees} onDelete={deleteEmployee} onEdit={editEmployee} />} />
+          <Route path="/add" element={<AddEmployeeForm onSubmit={addEmployee} />} />
         </Routes>
       </div>
     </Router>

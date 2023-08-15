@@ -1,53 +1,234 @@
 .employee-table {
-    display: flex;
-    flex-direction: column;
-    margin-left: 19%;
-    align-items: center;
-    margin-top:150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 100px auto 300px;
+  position: relative;
+  z-index: auto;
 
-  }
-  
-  .employee-table h2 {
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th,
-  td {
-    padding: 10px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  tr:hover {
-    background-color: #e6f7ff;
-  }
-  
-  button {
-    cursor: pointer;
-    padding: 5px 10px;
-    margin-right: 5px;
-    border: none;
-    border-radius: 3px;
-    background-color: #4caf50;
-    color: white;
-  }
-  .danger{
-    background-color:rgb(241, 64, 64);
-  }
-  button:hover {
-    background-color: #4f9aba;
-  }
-  
+
+}
+
+.employee-table h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #e6f7ff;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: #4caf50;
+  color: white;
+}
+
+.danger {
+  background-color: rgb(241, 64, 64);
+}
+
+button:hover {
+  background-color: #4f9aba;
+}
+
+
+.header {
+  display: flex;
+  width: 100%;
+
+  padding: 20px 24px 19px 0px;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding-left: 15px;
+
+
+}
+
+.rigth {
+  width: 50%;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: end;
+
+}
+
+.button {
+  height: 44px;
+  width: 100;
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #E6E7EC;
+  padding: 8px 16px;
+  gap: 2px;
+  cursor: pointer;
+}
+
+
+.add-employee {
+  background-color: #93312B;
+  color: white;
+}
+
+.button:hover {
+  padding: 8px 17px;
+  transition: 0.9ms;
+}
+
+.employee {
+  font-size: 28px;
+}
+
+.number {
+  color: #93312B;
+  background-color: #F9F5FF;
+  width: auto;
+  border-radius: 10px;
+  padding: 2px 2px;
+}
+
+.question-icon {
+  color: rgb(174, 171, 171);
+}
+
+
+
+
+.filter-box {
+  height: 46px;
+  width: 100%;
+  padding-left: 5px;
+  border: 2px solid rgba(227, 225, 225, 0.332);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+.form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust the opacity as needed */
+  z-index: -1;
+}
+
+
+
+.form {
+  background-color:white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 450px;
+  height: 500px;
+  padding: 20px;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 3px;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #93312B;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-btn,
+.cancel-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn {
+  background-color: #93312B;
+  color: white;
+  margin-right: 10px;
+}
+
+.cancel-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid #E6E7EC;
+}

@@ -28,19 +28,19 @@ const Sidebar = () => {
         <div className='menu'>
           <ul className='menu-links'>
             <li className='nav-link'>
-              <Link to="/" style={linkStyle}>
+              <Link to="/"  className='link' style={linkStyle}>
                 <PiUsersThreeDuotone className='icon'/>
                 <span className='text'>Employees</span>
               </Link>
             </li>
             <li className='nav-link'>
-              <Link to="/" style={linkStyle}>
+              <Link to="/" className='link' style={linkStyle}>
                 <BsCalendar3 className='icon'/>
                 <span className='text'>Calendars</span>
               </Link>
             </li>
             <li className='nav-link'>
-              <Link to="/" style={linkStyle}>
+              <Link to="/" className='link' style={linkStyle}>
                 <CiUser className='icon'/>
                 <span className='text'> Profile</span>
               </Link>
