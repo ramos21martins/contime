@@ -34,7 +34,7 @@ const Sidebar = () => {
               </Link>
             </li>
             <li className='nav-link'>
-              <Link to="/" className='link' style={linkStyle}>
+              <Link to="/calander" className='link' style={linkStyle}>
                 <BsCalendar3 className='icon'/>
                 <span className='text'>Calendars</span>
               </Link>
