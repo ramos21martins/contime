@@ -5,6 +5,8 @@ import AddEmployeeForm from './components/addEmployeeForm/AddEmployeeForm';
 import EmployeeTable from './components/employeeTable/EmployeeTable';
 
 import './App.css';
+import Navbar from './components/topNavBar/Navbar';
+import Calander from './components/calander/calander';
 
 const App = () => {
   // Dados fictícios para os funcionários
@@ -51,9 +53,10 @@ const App = () => {
     <Router>
       <div className="app-container">
         <Sidebar />
+        <Navbar/>
         <Routes>
           <Route path="/" element={<EmployeeTable employees={employees} onDelete={deleteEmployee} onEdit={editEmployee} />} />
-          <Route path="/add" element={<AddEmployeeForm onSubmit={addEmployee} />} />
+          <Route path="/calander" element={<Calander />} />
         </Routes>
       </div>
     </Router>
