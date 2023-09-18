@@ -2,9 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './sidebar.css';
 import logo from '../../assets/logo.png'
-import {BsCalendar3} from 'react-icons/bs'
-import {CiUser} from 'react-icons/ci'
-import {PiUsersThreeDuotone} from 'react-icons/pi'
+import {AiOutlineFileAdd} from 'react-icons/ai'
+
 
 const Sidebar = () => {
 
@@ -22,30 +21,24 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="logo">
-        <img  src={logo} alt='logo'/>
+        <img  src="http://pt-intranet.corp.pri:81/assets/layouts/layout-mc/img-mc/McDonalds_logo-03.png" alt='logo'/>
       </div>
       <div className='menu-bar'>
         <div className='menu'>
           <ul className='menu-links'>
             <li className='nav-link'>
               <Link to="/"  className='link' style={linkStyle}>
-                <PiUsersThreeDuotone className='icon'/>
-                <span className='text'>Employees</span>
+                <AiOutlineFileAdd className='icon'/>
+                <span className='text'>Inserir TC's</span>
               </Link>
             </li>
             <li className='nav-link'>
               <Link to="/calander" className='link' style={linkStyle}>
-                <BsCalendar3 className='icon'/>
-                <span className='text'>Calendars</span>
+                <AiOutlineFileAdd className='icon'/>
+                <span className='text'>Carregar BOP's</span>
               </Link>
             </li>
-            <li className='nav-link'>
-              <Link to="/" className='link' style={linkStyle}>
-                <CiUser className='icon'/>
-                <span className='text'> Profile</span>
-              </Link>
-            </li>
-          
+
           </ul>
         </div>
       </div>

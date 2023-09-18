@@ -1,0 +1,9 @@
+.form-inline {
+    display: flex;
+    flex-direction: row;
+    gap:20px; /* Espaçamento entre os campos */
+    padding: 40px 40px;
+  }
+  
+ 
+  

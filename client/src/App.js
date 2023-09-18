@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 import Sidebar from './components/sidebar/Sidebar';
-import AddEmployeeForm from './components/addEmployeeForm/AddEmployeeForm';
 import EmployeeTable from './components/employeeTable/EmployeeTable';
 
 import './App.css';

@@ -9,12 +9,11 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <div className='search-box'>
-            <BiSearchAlt className='icon'/>
-            <input  className="text" type="text" placeholder="Search anything here"/>
+            Ghost Receipts
         </div>
         <div className='rigth-icons'>
-            <AiOutlineSetting className='icon'/>
-            <AiOutlineBell className='icon'/>
+
+
             <img className='photo' src={photo}/>
         </div>
     </div>

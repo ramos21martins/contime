@@ -97,31 +97,6 @@ button:hover {
 }
 
 
-.add-employee {
-  background-color: #93312B;
-  color: white;
-}
-
-.button:hover {
-  padding: 8px 17px;
-  transition: 0.9ms;
-}
-
-.employee {
-  font-size: 28px;
-}
-
-.number {
-  color: #93312B;
-  background-color: #F9F5FF;
-  width: auto;
-  border-radius: 10px;
-  padding: 2px 2px;
-}
-
-.question-icon {
-  color: rgb(174, 171, 171);
-}
 
 
 
@@ -231,4 +206,13 @@ button:hover {
   background-color: white;
   color: black;
   border: 1px solid #E6E7EC;
+}
+
+
+.delete{
+  background-color: rgb(188, 33, 33);
+}
+
+.edit{
+  background-color: rgb(33, 188, 74);
 }
